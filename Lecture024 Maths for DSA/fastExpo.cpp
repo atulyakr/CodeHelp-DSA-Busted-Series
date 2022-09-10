@@ -11,7 +11,7 @@ int fastExpo(int a, int b ) {
             //odd
             res = res*a;
         }
-        b = b >> 1;
+        b = b >> 1;  //used to divide b by 2. Since bitwise operator takes less time to operate than division.
         a = a * a; 
     }
     return res;
